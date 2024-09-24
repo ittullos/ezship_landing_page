@@ -2,6 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css"; // Import custom CSS
 import HotelIMG from "./assets/images/hotel-1.jpg";
+import KioskIMG from "./assets/images/kiosk.png";
 
 function App() {
   return (
@@ -36,8 +37,13 @@ function App() {
         </p>
       </section>
 
+      {/* IMAGE */}
+      <section className="container text-cente  kiosk-image-section">
+        <img src={KioskIMG} alt="Kiosk" className="img-fluid kiosk-image" />
+      </section>
+
       {/* How It Works */}
-      <section className="container mt-2 px-4">
+      <section className="container mt-1 px-4">
         <h2>How It Works</h2>
         <ol className="list-group list-group-numbered">
           <li className="list-group-item">
@@ -53,6 +59,7 @@ function App() {
         </ol>
       </section>
 
+      {/* IMAGE */}
       <section className="container text-center">
         <img src={HotelIMG} alt="How It Works" className="img-fluid" />
       </section>
@@ -62,15 +69,22 @@ function App() {
         <h2>Benefits for Hotels</h2>
         <ul className="list-group">
           <li className="list-group-item">
-            Saves time: No more manual tracking or shipping processes for staff.
+            <div className="text-box">
+              Saves time: No more manual tracking or shipping processes for
+              staff.
+            </div>
           </li>
           <li className="list-group-item">
-            Improves guest experience: Guests appreciate quick, seamless
-            returns.
+            <div className="text-box">
+              Improves guest experience: Guests appreciate quick, seamless
+              returns.
+            </div>
           </li>
           <li className="list-group-item">
-            Boosts hotel reputation: Positive reviews from happy guests who
-            receive their forgotten items efficiently.
+            <div className="text-box">
+              Boosts hotel reputation: Positive reviews from happy guests who
+              receive their forgotten items efficiently.
+            </div>
           </li>
         </ul>
       </section>

@@ -84,6 +84,20 @@ section {
   border: 2px dashed red;
 }
 
+.kiosk-image {
+  width: 50%; /* Adjust the size as needed */
+  height: auto;
+  margin: 0 auto; /* Center the image */
+}
+
+.kiosk-image-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -80px; /* Adjust the top margin as needed */
+  margin-bottom: -50px;
+}
+
 /* Media Queries for Tablets */
 @media (max-width: 768px) {
   .hero h1 {
@@ -112,6 +126,10 @@ section {
     width: 80%; /* Make buttons full width */
     margin-bottom: 0.5rem; /* Add space between buttons */
   }
+
+  .kiosk-image {
+    width: 60%; /* Adjust the size for tablets */
+  }
 }
 
 /* Media Queries for Mobile Devices */
@@ -133,7 +151,7 @@ section {
 
   .call-to-action {
     display: flex;
-    flex-direction: column;
+    flex-direction: column !important;
     align-items: center;
   }
 
@@ -143,5 +161,9 @@ section {
     display: block; /* Make buttons stack vertically */
     width: 100%; /* Make buttons full width */
     margin-bottom: 0.5rem; /* Add space between buttons */
+  }
+
+  .kiosk-image {
+    width: 80%; /* Adjust the size for mobile devices */
   }
 }
