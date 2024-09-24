@@ -26,7 +26,7 @@ function App() {
       </header>
 
       {/* Key Value Proposition */}
-      <section className="container my-5 text-center" id="content">
+      <section className="container mt-4 text-center px-4" id="content">
         <h2>What is EZ Ship Kiosk?</h2>
         <p>
           EZ Ship Kiosk is the ultimate solution for managing left-behind items
@@ -37,7 +37,7 @@ function App() {
       </section>
 
       {/* How It Works */}
-      <section className="container my-5">
+      <section className="container mt-2 px-4">
         <h2>How It Works</h2>
         <ol className="list-group list-group-numbered">
           <li className="list-group-item">
@@ -53,12 +53,12 @@ function App() {
         </ol>
       </section>
 
-      <section className="container my-5 text-center">
+      <section className="container text-center">
         <img src={HotelIMG} alt="How It Works" className="img-fluid" />
       </section>
 
       {/* Benefits for Hotels */}
-      <section className="container my-5">
+      <section className="container mb-2 px-4">
         <h2>Benefits for Hotels</h2>
         <ul className="list-group">
           <li className="list-group-item">
@@ -76,7 +76,7 @@ function App() {
       </section>
 
       {/* Call to Action */}
-      <section className="text-center my-5">
+      <section className="text-center my-5 px-4 call-to-action">
         <a className="btn btn-primary btn-lg mx-2" href="#contact">
           Request a Free Demo
         </a>
@@ -93,7 +93,7 @@ function App() {
         <h2 className="text-center" id="contact">
           Contact Us
         </h2>
-        <form>
+        <form className="px-4">
           <div className="mb-3">
             <label htmlFor="name" className="form-label">
               Name

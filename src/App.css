@@ -25,7 +25,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  background-color: rgba(0, 0, 0, 0.55); /* Semi-transparent black overlay */
   z-index: 1;
 }
 
@@ -82,4 +82,66 @@ section {
 
 .debug-border {
   border: 2px dashed red;
+}
+
+/* Media Queries for Tablets */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.25rem;
+  }
+
+  .hero .btn {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .call-to-action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .call-to-action .btn {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    display: block; /* Make buttons stack vertically */
+    width: 80%; /* Make buttons full width */
+    margin-bottom: 0.5rem; /* Add space between buttons */
+  }
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 576px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero .btn {
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
+    width: 90%; /* Make buttons full width */
+    margin-bottom: 0.5rem; /* Add space between buttons */
+  }
+
+  .call-to-action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .call-to-action .btn {
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
+    display: block; /* Make buttons stack vertically */
+    width: 100%; /* Make buttons full width */
+    margin-bottom: 0.5rem; /* Add space between buttons */
+  }
 }
